@@ -97,7 +97,7 @@
         <InArgument x:TypeArguments="scg:List(x:String)">[InputData]</InArgument>
       </InvokeMethod.TargetObject>
     </InvokeMethod>
-    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign DisplayName="Assign - top 3 eleemts to output data" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:List(x:String)">[OutputData]</OutArgument>
       </Assign.To>
@@ -105,6 +105,6 @@
         <InArgument x:TypeArguments="scg:List(x:String)">[InputData.GetRange(0,3)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Join(&quot;, &quot;, OutputData)]" />
+    <ui:LogMessage DisplayName="Log Message - print output data" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Join(&quot;, &quot;, OutputData)]" />
   </Sequence>
 </Activity>
